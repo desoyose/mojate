@@ -1,0 +1,832 @@
+@import url("./fonts.css");
+
+:root {
+    --blue: #053b86;
+    --blue-medium: #1790D9;
+    --blue-regular: #7CC6E9;
+    --blue-ligth: #e4f3fb;
+    --blue-input: #7CC6E980;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    font-family: 'MPLUSRounded1c', sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: white;
+
+}
+
+p,
+.span__blue {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.2rem;
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+.img__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.img__header img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.layout__header {
+    position: relative;
+    z-index: 1;
+    padding: 5rem 1rem 0 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo__header {
+    width: 188px;
+    height: auto;
+}
+
+.logo__gotas {
+    width: 225px;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.titles__header {
+    position: relative;
+    z-index: 1;
+    padding: 5rem 1rem 0 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.box__titles {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+h1,
+h2 {
+    font-size: 3.125rem;
+    font-weight: 900;
+    color: var(--blue);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+span {
+    color: gray;
+    font-size: 1.5rem;
+}
+
+.sections {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.container__first {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.container__first>div {
+    width: 33%;
+}
+
+.first__text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.span__blue {
+    color: var(--blue);
+}
+
+.first__p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.first__gotas {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.first__section {
+    padding: 1rem;
+}
+
+.first__gotas img {
+    width: 112.5px;
+    height: auto;
+}
+
+.button__section {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background-color: var(--blue-medium);
+    border-radius: 2rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.button a {
+    line-height: 1.5rem;
+
+}
+
+.article__donde {
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 3rem;
+    margin-top: 220px;
+}
+
+.donde__text h2 {
+    width: 100px;
+}
+
+.donde__text p {
+    font-weight: 600;
+}
+
+.donde__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.article__donde>div {
+    width: 390px;
+
+}
+
+.section__donde {
+    width: 100%;
+    position: relative;
+}
+
+.img__fondo {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.button_guapo {
+    width: 100%;
+    background-color: var(--blue);
+    line-height: 18px;
+}
+
+.participar__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.participar__container>div {
+    width: 33%;
+}
+
+.title__participar {
+    text-transform: uppercase;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--blue-medium);
+    color: var(--blue-medium);
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 155px;
+}
+
+.box__participar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.7rem;
+    text-align: center;
+}
+
+.title__ruleta {
+    width: 270px;
+}
+
+.img_marcador {
+    position: relative;
+    z-index: 1;
+    width: 50px;
+    margin-bottom: -45px;
+}
+
+.img__ruleta img {
+    transform: rotate(40deg);
+}
+
+.button__ruleta {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.btn__filtro {
+    background-color: var(--blue);
+}
+
+.img__jugar {
+    position: relative;
+    width: 60px;
+    cursor: pointer;
+
+}
+
+.circle__jugar {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    border-radius: 1000px;
+    border: 1.5px solid red;
+    cursor: pointer;
+}
+
+.box__mojarte {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.box__mojarte>div {
+    width: 50%;
+}
+
+.box__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+/* Estilos para la caja que aparece en el centro */
+.resultado {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(216, 216, 216, 0.164);
+    z-index: 9999;
+    /* Asegura que el mensaje quede sobre otros elementos */
+    opacity: 0;
+    /* Comienza invisible */
+    transition: opacity 1s ease-in-out;
+    /* Transición para la opacidad */
+}
+
+.box__span {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centra la caja */
+    width: 690px;
+    padding: 2rem;
+    background-color: white;
+    /* Fondo oscuro semi-transparente */
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.resultado.visible {
+    opacity: 1;
+    /* Cuando se agrega la clase "visible", la caja se hace visible */
+}
+
+.cross {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    position: fixed;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #4b4a4a;
+    border-radius: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.resultado h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #da0080;
+}
+
+.resultado p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.resultado img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#mostrar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+#mostrar a {
+    text-decoration: underline;
+    color: blue;
+    font-weight: 600;
+}
+
+.bold__font {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.2rem;
+    font-weight: 600;
+}
+
+.form__localitation {
+    margin-bottom: 0.7rem;
+    width: 100%;
+}
+
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+#form__diploma {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#form__diploma input {
+    border: none;
+    outline: none;
+    background-color: var(--blue-input);
+    width: 100%;
+    height: 35px;
+
+
+}
+
+#form__diploma div {
+    width: 47%;
+}
+
+.h1__form h2 {
+    text-transform: none;
+    text-align: center;
+}
+
+#form__diploma label {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+#form__diploma .check__acept input {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #d1d1d1;
+}
+
+#form__diploma .check__acept label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#form__diploma .check__acept {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 1rem;
+    gap: 0.5rem;
+}
+
+#form__diploma .button__form {
+    width: auto;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.button__form-box {
+    display: flex;
+    justify-content: end;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.box__check {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+#form__diploma .error{
+    width: 100%;
+}
+.errorMsg {
+    border: 1px solid red;
+    padding: 1rem;
+    color: #da0080;
+}
+
+#form__diploma .errorBox {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#form__diploma .news,
+#form__diploma .news__ok{
+    width: 100%;
+}
+#form__diploma .gracias,
+#form__diploma .news__ok {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 1px solid var(--blue);
+
+}
+
+.gracias p,
+.news__ok {
+    text-align: center;
+    font-weight: 600;
+    color: var(--blue);
+
+}
+
+#form__diploma .check__acept a {
+    text-decoration: underline;
+}
+
+.box__info {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.img__info {
+    width: 100%;
+    height: 342px;
+}
+
+.img__info img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.info__link a {
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--blue);
+    text-align: center;
+    color: var(--blue-regular);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.info__link {
+    display: flex;
+    justify-content: center;
+}
+
+.box__share {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.box__share>div {
+    width: 60px;
+    height: 60px;
+}
+
+.box__share>div img{
+    width: 100%;
+    object-fit: cover;
+}
+footer{
+    position: relative;
+    margin-top: 6rem;
+   
+}
+.img__footer{
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+}
+.img__footer img{
+    width: 100%;
+    object-fit: cover;
+}
+.section__footer{
+    position: relative;
+    z-index: 10;
+    max-width: 1100px;
+    margin: 2rem auto 0 auto;
+}
+.button__blue{
+    display: inline-block;
+    padding: 0.8rem 1rem;
+    background-color: var(--blue);
+    border-radius: 2rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+}
+.box__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-bottom: 17rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+
+}
+.box__logo-footer{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+.img__logo img{
+    width: 100%;
+}
+.buttons__footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.info__footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+
+}
+.info__footer p{
+    font-weight: 600;
+    text-align: center;
+    color: var(--blue);
+    
+}
+.partner{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.box__partner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.box__partner div{
+    width: 45%;
+}
+.partner p{
+    font-weight: 600;
+}
+
+@media (max-width:700px){
+.layout__header{
+    overflow: hidden;
+  
+
+}
+.participar__container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.participar__container>div{
+    width: 95%;
+    gap: 2rem
+}
+.img__ruleta{
+    width: 70%;
+}
+.sections {
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+.box__mojarte{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box__mojarte>div{
+    width: 95%;
+}
+h1,h2{
+    line-height: 45px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.h1__form h2 {
+    text-transform: none;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#form__diploma div {
+    width: 99%;
+}
+.button__form-box {
+    justify-content: center;
+
+}
+.box__info{
+    flex-direction: column;
+    
+}
+.box__info>div{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.img__info {
+    width: 100%;
+    height: auto;
+}
+.box__footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.box__logo-footer{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+.img__logo{
+    width: 30%;
+}
+.buttons__footer{
+    flex-direction: row;
+}
+.info__footer,.partner{
+    width: 100%;
+    padding: 2rem 1rem
+}
+.box__footer {
+
+    padding-bottom: 6rem;
+}
+select{
+    margin: 1rem 0;
+}
+
+.box__titles {
+    justify-content: center;
+}
+.container__first {
+    width: 100%;
+    flex-direction: column;
+}
+.container__first>div {
+    width: 100%;
+}
+.container__first>:first-child {
+    width: 63%;
+}
+.button__section {
+    flex-direction: column;
+    align-items: center;
+}
+.button{
+    width: fit-content;
+}
+.article__donde{
+    flex-direction: column;
+}
+.donde__text h2{
+    width: 100%;
+}
+.donde__text{
+    align-items: center;
+}
+.article__donde>div {
+    width: 100%;
+}
+.button__form-box{
+    margin: 0;
+}
+.box__partner{
+    flex-direction: column;
+    align-items: center;
+}
+.box__partner div{
+    width: 60%;
+}
+.box__text{
+    text-align: center;
+}
+#mostrar{
+    text-align: center;
+}
+.box__logo-footer{
+    gap: 2rem;
+}
+.box__span{
+    width: 360px;
+}
+.title__span{
+    line-height: 27px;
+    margin: 1rem 0;
+}
+};
